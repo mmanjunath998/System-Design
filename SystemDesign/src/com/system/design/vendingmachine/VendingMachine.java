@@ -80,4 +80,56 @@ public class VendingMachine implements VendingMachineService {
 		
 	}
 
+
+	public Item getCurrentItem() {
+		return currentItem;
+	}
+
+
+	public void setCurrentItem(Item currentItem) {
+		this.currentItem = currentItem;
+	}
+
+
+	public int getCurrentBalance() {
+		return currentBalance;
+	}
+
+
+	public void setCurrentBalance(int currentBalance) {
+		this.currentBalance = currentBalance;
+	}
+
+
+	public long getTotalSales() {
+		return totalSales;
+	}
+
+
+	public void setTotalSales(long totalSales) {
+		this.totalSales = totalSales;
+	}
+
+
+	public Inventory<Item> getItemInventory() {
+		return itemInventory;
+	}
+
+
+	public void setItemInventory(Inventory<Item> itemInventory) {
+		this.itemInventory = itemInventory;
+	}
+
+
+	public Inventory<Coin> getCashInventory() {
+		return cashInventory;
+	}
+
+
+	public void setCashInventory(Inventory<Coin> cashInventory) {
+		this.cashInventory = cashInventory;
+	}
+	
+	
+
 }
